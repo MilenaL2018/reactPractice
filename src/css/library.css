@@ -1,0 +1,98 @@
+body {
+    background: #27273c;
+    font-family: 'Arvo', serif;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.list {
+    background: white;
+    width: 600px;
+    min-height: 300px;
+    box-shadow: 0 15px 35px -5px rgba(50, 88, 130, 0.32);
+    border-radius: 15px;
+    padding: 30px;
+    z-index: 50;
+    margin-top: 5%;
+}
+
+.plwrap {
+    margin:0 auto;
+}
+
+#plList li {
+    cursor:pointer;
+    display:block;
+    margin:0;
+    padding:21px 0;
+}
+
+#plList li:hover {
+    background-color:rgba(0,0,0,.1);
+}
+
+.plItem {
+    position:relative;
+}
+
+.plTitle {
+    left:50px;
+    overflow:hidden;
+    position:absolute;
+    right:65px;
+    text-overflow:ellipsis;
+    top:0;
+    white-space:nowrap;
+}
+
+.plNum {
+    padding-left:21px;
+    width:25px;
+}
+
+.plLength {
+    padding-left:21px;
+    position:absolute;
+    right:21px;
+    top:0;
+}
+
+.plSel,
+.plSel:hover {
+    background-color:rgba(0,0,0,.1);
+    color:#fff;
+    cursor:default !important;
+}
+
+#tracks a {
+    border-radius:3px;
+    color:#fff;
+    cursor:pointer;
+    display:inline-block;
+    font-size:2.3rem;
+    height:35px;
+    line-height:.175;
+    margin:0 5px 30px;
+    padding:10px 15px;
+    text-decoration:none;
+    transition:background .3s ease;
+}
+
+#tracks a:last-child {
+    margin-left:0;
+}
+
+#tracks a:hover,
+#tracks a:active {
+    background-color:rgba(0,0,0,.1);
+    color:#fff;
+}
+
+#tracks a::-moz-focus-inner {
+    border:0;
+    padding:0;
+}
